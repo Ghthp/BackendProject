@@ -6,7 +6,7 @@ import connectDB from "./db/db.js";
 import app from "./app.js";
 
 connectDB()
-.then(() => {
+.then(() => {       //Using Promises
     const PORT = process.env.PORT || 8000;
     
     app.listen(PORT, (req, res) => {  // run the server
